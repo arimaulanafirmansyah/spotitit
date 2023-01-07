@@ -257,7 +257,7 @@ $json = json_decode($register, true);
 if(preg_match('/success/i',$register)){
 	$logintoken = $json['success']['login_token'];
 	$username = $json['success']['username'];
-	echo "\n $email + $pass ";
+	echo "\n Email : $email \n Password : $pass ";
 	//echo " > $logintoken - $username\n";
 	} else if(preg_match('/error/i',$register)){
 		echo "  IP Rate limited, Please airplane mode ";
@@ -317,7 +317,7 @@ echo "\n  Successfully Claimed Offer Samsung Galaxy series <3"; sleep(1);
 echo "\n  Goto browser and login using that account to activate now"; sleep(2);
 $saved = '{"email":"'.$email.'","password":"'.$pass.'"}';
 echo "\n\n";
-system("xdg-open https://www.spotify.com/id/redirect-in-app/android_premium_promotion/?offerSlug=samsung-global2022-pdp-3m-3m-trial-one-time-code");
+echo "Silahkan Copy & Paste Link Ini Di Chrome Kalian \n https://www.spotify.com/id/redirect-in-app/android_premium_promotion/?offerSlug=samsung-global2022-pdp-3m-3m-trial-one-time-code"
 file_put_contents('res_spotif.json', "$saved\n", FILE_APPEND);
 
 
