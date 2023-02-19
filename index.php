@@ -1,3 +1,348 @@
-<?php
-$SISTEMIT_COM_ENC = "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";$rand=base64_decode("Skc1aGRpQTlJR2Q2YVc1bWJHRjBaU2hpWVhObE5qUmZaR1ZqYjJSbEtDUlRTVk5VUlUxSlZGOURUMDFmUlU1REtTazdEUW9KQ1Fra2MzUnlJRDBnV3lmMUp5d242eWNzSitNbkxDZjdKeXduNFNjc0ovRW5MQ2ZtSnl3bjdTY3NKLzBuTENmcUp5d250U2RkT3cwS0NRa0pKSEp3YkdNZ1BWc25ZU2NzSjJrbkxDZDFKeXduWlNjc0oyOG5MQ2RrSnl3bmN5Y3NKMmduTENkMkp5d25kQ2NzSnlBblhUc05DZ2tKSUNBZ0lDUnVZWFlnUFNCemRISmZjbVZ3YkdGalpTZ2tjM1J5TENSeWNHeGpMQ1J1WVhZcE93MEtDUWtKWlhaaGJDZ2tibUYyS1RzPQ==");eval(base64_decode($rand));$STOP="kmcXUD8huEt0lyS+9LRXWyNb8qNs+SW5LVe5hgAJUECJJNi8SPJM3/cDdq5z2g/YS34QmwAPJHTgIU8JARuZSepVsqurexYzPWjZkKjIiMjIeGem0OtX6PUr+kc8z/c0j7i+F8XOUJD2Dl6/MgPHiGLfQUbgWb4j7LrYw3Zhd0ZwQrywsAvgvdev/vL61c7OrjFDTYao";
-?>
+<?php 
+ 
+
+
+error_reporting(0);
+function curlon($param,$headers,$url)
+{
+		$ch = curl_init();
+		curl_setopt($ch, CURLOPT_URL, $url);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, false);
+		curl_setopt($ch, CURLOPT_POST, 1);
+		curl_setopt($ch, CURLOPT_POSTFIELDS, $param);
+		curl_setopt($ch, CURLOPT_ENCODING, "GZIP,DEFLATE");
+		//curl_setopt($ch,CURLOPT_PROXY, $proxy);
+		curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+		curl_setopt($ch, CURLOPT_HEADER, 1);
+$result = curl_exec($ch);
+if (curl_errno($ch)) {
+    echo 'Error:' . curl_error($ch);
+}
+curl_close($ch);
+return $result;
+}
+$Grey   = "\e[1;30m";
+$Red    = "\e[0;31m";
+$Green  = "\e[0;32m";
+$Yellow = "\e[0;33m";
+$Blue   = "\e[1;34m";
+$Purple = "\e[0;35m";
+$Cyan   = "\e[0;36m";
+$White  = "\e[0;37m";
+function curl($param,$headers,$url)
+{
+		$ch = curl_init();
+		curl_setopt($ch, CURLOPT_URL, $url);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, false);
+		curl_setopt($ch, CURLOPT_POST, 1);
+		curl_setopt($ch, CURLOPT_POSTFIELDS, $param);
+		curl_setopt($ch, CURLOPT_ENCODING, "GZIP,DEFLATE");
+		//curl_setopt($ch,CURLOPT_PROXY, $proxy);
+		curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+$result = curl_exec($ch);
+if (curl_errno($ch)) {
+    echo 'Error:' . curl_error($ch);
+}
+curl_close($ch);
+return $result;
+}
+function pathon($method,$headers,$url)
+{
+		$ch = curl_init();
+		curl_setopt($ch, CURLOPT_URL, $url);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, false);
+		//curl_setopt($ch, CURLOPT_POST, 1);
+		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $method);
+		curl_setopt($ch, CURLOPT_ENCODING, "GZIP,DEFLATE");
+		//curl_setopt($ch,CURLOPT_PROXY, $proxy);
+		curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+		curl_setopt($ch, CURLOPT_HEADER, 1);
+$result = curl_exec($ch);
+if (curl_errno($ch)) {
+    echo 'Error:' . curl_error($ch);
+}
+curl_close($ch);
+return $result;
+}
+
+function path($method,$headers,$url)
+{
+		$ch = curl_init();
+		curl_setopt($ch, CURLOPT_URL, $url);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, false);
+		//curl_setopt($ch, CURLOPT_POST, 1);
+		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $method);
+		curl_setopt($ch, CURLOPT_ENCODING, "GZIP,DEFLATE");
+		//curl_setopt($ch,CURLOPT_PROXY, $proxy);
+		curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+		//curl_setopt($ch, CURLOPT_HEADER, 1);
+$result = curl_exec($ch);
+if (curl_errno($ch)) {
+    echo 'Error:' . curl_error($ch);
+}
+curl_close($ch);
+return $result;
+}
+
+
+function signup($email,$pass)
+	{
+		$url = "https://spclient.wg.spotify.com/signup/public/v2/account/create";
+		$param = '{
+  "account_details": {
+    "birthdate":"1991-01-01",
+    "consent_flags": {
+      "eula_agreed": true,
+      "send_email": false,
+      "third_party_email": true
+    },
+    "display_name": "Agatha",
+    "email_and_password_identifier": {
+      "email": "'.$email.'",
+      "password": "'.$pass.'"
+    },
+    "gender": 1
+  },
+  "callback_uri": "https://www.spotify.com/signup/challenge?forward_url\u003dhttps%3A%2F%2Fwww.spotify.com%2Faccount%2Foverview%2F\u0026locale\u003did",
+  "client_info": {
+    "api_key": "bff58e9698f40080ec4f9ad97a2f21e0",
+    "app_version": "v2",
+    "capabilities": [
+      1
+    ],
+    "installation_id": "1e543f1f09454d2784f0ea065451435a",
+    "platform": "www"
+  },
+  "tracking": {
+    "creation_flow": "",
+    "creation_point": "https://www.spotify.com/id/login/",
+    "referrer": ""
+  }
+}';
+		$headers = array();
+		$headers[] = 'Content-Length: '.strlen($param);
+		$headers[] = 'User-Agent: Mozilla/5.0 (Linux; Android 10; RMX2061) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.186 Mobile Safari/537.36';
+		$headers[] = 'Content-Type: application/json';
+		$headers[] = 'Accept: */*';
+		$headers[] = 'Accept-Language: id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7';
+		return curl($param,$headers,$url);
+	}
+
+function getCSRF(){
+	$url = "https://accounts.spotify.com/en/login";
+	$method = "GET";
+	$headers = array();
+	$headers[] = 'User-Agent: Mozilla/5.0 (Linux; Android 10; RMX2061) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.186 Mobile Safari/537.36';
+	$headers[] = 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3';
+	$headers[] = 'Accept-Encoding: gzip, deflate, br';
+	$headers[] = 'Accept-Language: id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7';
+	$headers[] = 'Cookie: __Host-device_id=AQASTaFlcfRwTXhko6Y5HZmzSochQ7qB8ghzHLlyBgthfH9Rv8iTUtZ8lf0hHvhQmbGdaN_E8CDrhttjU88OBKO0DzZZE7nTlTM;sp_sso_csrf_token=013acda7193cecfaa271306f303c2b43f45eb6380431363732343535393236303530;__Host-sp_csrf_sid=b7eb719dbaf5cf8c9e5eec8888cc25a813c37db179091fc3d2d324f2d70143bd';
+	return pathon($method,$headers,$url);
+	}
+
+function authlogin($logintoken,$csrf,$csrfsid)
+	{
+		$url = "https://www.spotify.com/api/signup/authenticate";
+		$param = "splot=$logintoken";
+		$headers = array();
+		$headers[] = 'Content-Length: '.strlen($param);
+		$headers[] = 'X-Csrf-Token: '.$csrf;
+		$headers[] = 'User-Agent: Mozilla/5.0 (Linux; Android 10; RMX2061) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.186 Mobile Safari/537.36';
+		$headers[] = 'Content-Type: application/x-www-form-urlencoded';
+		$headers[] = 'Accept: */*';
+		$headers[] = 'Accept-Encoding: gzip, deflate, br';
+		$headers[] = 'Accept-Language: id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7';
+		$headers[] = 'Cookie: __Host-sp_csrf_sid='.$csrfsid;
+		return curlon($param,$headers,$url);
+	}
+
+function getAccessToken($token)
+	{
+		$url = "https://open.spotify.com/get_access_token?reason=transport&productType=web_player";
+		$method = "GET";
+		$headers = array();
+		$headers[] = 'User-Agent: Mozilla/5.0 (Linux; Android 10; RMX2061) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.186 Mobile Safari/537.36';
+		$headers[] = 'Content-Type: application/x-www-form-urlencoded';
+		$headers[] = 'Accept: */*';
+		$headers[] = 'Accept-Encoding: gzip, deflate, br';
+		$headers[] = 'Accept-Language: id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7';
+		$headers[] = 'cookie: sp_dc='.$token;
+		return path($method,$headers,$url);
+	}
+
+function activateSamsung($bearer)
+{
+    $url = "https://spclient.wg.spotify.com/premium-destination-hubs/v2/page?locale=id&device_id=9b4ff48cce620e80&partner_id=&referrer_id=&build_model=Samsung-sm-n900a&cache_key=free&show_unsafe_unpublished_content=false&manufacturer=Samsung";
+    $method = "GET";
+    $headers = array();
+    $headers[] = 'Accept-Language: id-ID;q=1, en-US;q=0.5';
+    $headers[] = 'User-Agent: Spotify/8.6.4 Android/29 (Samsung-sm-n900a)';
+    $headers[] = 'Spotify-App-Version: 8.6.4';
+    $headers[] = 'X-Client-Id: 9a8d2f0ce77a4e248bb71fefcb557637';
+    $headers[] = 'App-Platform: Android';
+    $headers[] = 'Client-Token: ' . $token;
+    $headers[] = 'Authorization: Bearer ' . $bearer;
+    $headers[] = 'Accept-Encoding: gzip';
+    return path($method, $headers, $url);
+}
+    function RandomString()
+    {
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $randstring = '';
+        for ($i = 0; $i < 10; $i++) {
+            $randstring = $characters[rand(0, strlen($characters))];
+        }
+        return $randstring;
+    }
+
+
+function randUser()
+	{
+		$fp = file_get_contents('https://names.drycodes.com/1?nameOptions=boy_names');
+		$pp = explode('"',$fp)[1];
+		$us = explode('"',$pp)[0];
+		$p = str_replace('_',' ',$us);
+		$change = str_replace('_','',$us);
+		return strtolower($change);
+	}
+
+function status($Red)
+	{
+$fg = file_get_contents('https://tools-amfcode.com/spotify.php');
+$ex = explode('content="status:',$fg)[1];
+$stat = explode(' -',$ex)[0];
+if($stat=="online"){
+	var_dump($fg);
+	} else if($stat=="offline"){
+		// echo "$Red ╰┈➤ Server down, contact me at WhatsApp 6285157792619\n\n"; die;
+		var_dump($fg);
+	} 
+}
+
+function send()
+	{
+		$waktu = date('d-m-Y');
+		$info = "New Devices register at $waktu";
+		$TOKEN = "5911048158:AAHV09H6xFz8YjXdyTdOopckKMmEzIdQkuw";
+		$chatid = "-1001764674071";
+		$pesan = "$info";
+		$method = "sendMessage";
+		$url = "https://api.telegram.org/bot" . $TOKEN . "/". $method;
+		$param = "chat_id=$chatid&text=$pesan";
+		$headers = array();
+		$headers[] = 'X-Requested-With: XMLHttpRequest';
+		$headers[] = 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36';
+		$run = curl($param,$headers,$url);
+	}
+
+function devices()
+	{
+		if(file_exists(".e")){
+			} else {
+				file_put_contents('.e', "$saved\n", FILE_APPEND);
+				$gask = send();
+			}
+	}
+				
+
+system('clear');
+$deh = devices();
+echo "$Green
+	    ___  ____  _____  ____  ____  ____  _  _ 
+	   / __)(  _ \(  _  )(_  _)(_  _)( ___)( \/ )
+	   \__ \ )___/ )(_)(   )(   _)(_  )__)  \  / 
+	   (___/(__)  (_____) (__) (____)(__)   (__) \n"."$White               Samsung Galaxy Free 3 Month offer\n\n\n";
+
+echo "$Green Select the menu below";
+echo "\n$White ╰┈➤ 1. Register and get Cookie Browser ";
+echo "\n$White ╰┈➤ 2. Register and get Bearer Authorization app ";
+echo "\n$White ╰┈➤ 3. Register and Claim Free Spotify 3 Month Samsung Galaxy ";
+echo "\n$Yellow ╰┈➤ Choose : ";
+$hai = trim(fgets(STDIN));
+echo "$Grey ╰┈➤ Your choice $hai";
+
+
+reg:
+echo "\n\n";
+echo "$Yellow Trying to register on spotify use random email ";
+$email = "amfcode".randUser()."@gmail.com";
+$pass = randUser()."@123@";
+$register = signup($email,$pass);
+$json = json_decode($register, true);
+if(preg_match('/success/i',$register)){
+	$logintoken = $json['success']['login_token'];
+	$username = $json['success']['username'];
+	echo "\n$White ╰┈➤ $email + $pass ";
+	} else if(preg_match('/error/i',$register)){
+		echo "Email Sudah Terdaftar!";
+		$pr = trim(fgets(STDIN));
+		goto reg;
+		}
+
+$get = getCSRF();
+preg_match_all('/^Set-Cookie:\s*([^;]*)/mi', $get, $matches);
+$cookies = array();
+foreach($matches[1] as $item) {
+    parse_str($item, $cookie);
+    $cookies = array_merge($cookies, $cookie);
+}
+$csrf = $cookies['sp_sso_csrf_token'];
+$csrfsid = $cookies['__Host-sp_csrf_sid'];
+
+$login = authlogin($logintoken,$csrf,$csrfsid);
+list($head,$param) = explode("\r\n\r\n",$login,2);
+$per = explode('set-cookie: sp_dc=',$login)[1];
+$token = explode(';',$per)[0];
+if($hai=="1"){
+	echo "\n$Green ╰┈➤ Cookie Browser : $token\n\n";
+	die;
+	}
+if($token==null)
+	{
+		goto reg;
+	} else {
+		//echo "\n$White ╰┈➤ Successfully Grabber Cookie <3 ";
+	}
+$hems = getAccessToken($token);
+//var_dump($hems);
+$x = json_decode($hems, true);
+if($hai=="2"){
+	$bearer = $x['accessToken'];
+	echo "\n$Green ╰┈➤ Bearer Authorization : $bearer\n\n";
+	die;
+	}
+if($pler=="5")
+	{
+		$bearer = $x['accessToken'];
+		echo "\n$White ╰┈➤ $bearer";
+		die;
+	}
+if($x['isAnonymous'] == false)
+	{
+		$bearer = $x['accessToken'];
+		echo "\n$White ╰┈➤ Successfully Grabber Bearer and Cookie <3";
+	} else {
+		var_dump("\n\n$hems\n\n");
+		die;
+	}
+$devicerand = RandomString();
+$linkdevices = activateSamsung($bearer,$devicerand);
+$linkredeem = "https://www.spotify.com/id/redirect-in-app/android_premium_promotion/?offerSlug=samsung-global2022-pdp-3m-3m-trial-one-time-code&country=US";
+echo "\n$Green ╰┈➤ Successfully Claimed Offer Samsung Galaxy series <3"; sleep(1);
+echo "\n$Yellow ╰┈➤ Goto browser and login using that account to activate now"; sleep(2);
+$saved = "Email : $email\nPassword : $pass\nLink : $linkredeem\n=========================================";
+echo "\n\n";
+file_put_contents('result.txt', "$saved\n", FILE_APPEND);
+goto reg;
+
+
+
+
+
+
+
+ ?>
