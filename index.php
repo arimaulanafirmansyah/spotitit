@@ -89,48 +89,54 @@ return $result;
 }
 
 
-function signup($email,$pass)
-	{
-		$url = "https://spclient.wg.spotify.com/signup/public/v2/account/create";
-		$param = '{
+function signup($email, $pass)
+{
+    $url = "https://spclient.wg.spotify.com/signup/public/v2/account/create";
+    $param = '{
   "account_details": {
-    "birthdate":"1991-01-01",
+    "birthdate": "1999-07-21",
     "consent_flags": {
       "eula_agreed": true,
-      "send_email": false,
+      "send_email": true,
       "third_party_email": true
     },
-    "display_name": "Agatha",
+    "display_name": "AMFCCODE",
     "email_and_password_identifier": {
-      "email": "'.$email.'",
-      "password": "'.$pass.'"
+      "email": "' . $email . '",
+      "password": "' . $pass . '"
     },
     "gender": 1
   },
-  "callback_uri": "https://www.spotify.com/signup/challenge?forward_url\u003dhttps%3A%2F%2Fwww.spotify.com%2Faccount%2Foverview%2F\u0026locale\u003did",
+  "callback_uri": "https://auth-callback.spotify.com/r/android/music/signup",
   "client_info": {
-    "api_key": "bff58e9698f40080ec4f9ad97a2f21e0",
+    "api_key": "142b583129b2df829de3656f9eb484e6",
     "app_version": "v2",
     "capabilities": [
       1
     ],
-    "installation_id": "1e543f1f09454d2784f0ea065451435a",
+    "installation_id": "1e543f1f-0945-4d27-84f0-ea065451435a",
     "platform": "www"
   },
   "tracking": {
     "creation_flow": "",
-    "creation_point": "https://www.spotify.com/id/login/",
+    "creation_point": "https://www.spotify.com/tr/",
     "referrer": ""
   }
 }';
-		$headers = array();
-		$headers[] = 'Content-Length: '.strlen($param);
-		$headers[] = 'User-Agent: Mozilla/5.0 (Linux; Android 10; RMX2061) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.186 Mobile Safari/537.36';
-		$headers[] = 'Content-Type: application/json';
-		$headers[] = 'Accept: */*';
-		$headers[] = 'Accept-Language: id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7';
-		return curl($param,$headers,$url);
-	}
+    $headers = array();
+    $headers[] = 'Content-Length: ' . strlen($param);
+    $headers[] = 'User-Agent: Spotify/8.8.0.347 Android/25 (SM-G988N)';
+    $headers[] = 'App-Platform: Android';
+    $headers[] = 'Connection: Keep-Alive';
+    $headers[] = 'Origin: https://www.spotify.com';
+    $headers[] = 'Host: spclient.wg.spotify.com';
+    $headers[] = 'Spotify-App-Version: 8.8.0.347';
+    $headers[] = 'Content-Type: application/json';
+    $headers[] = 'Accept: */*';
+    $headers[] = 'Accept-Encoding: gzip';
+    $headers[] = 'Accept-Language: tr-TR;q=1, en-US;q=0.5';
+    return curl($param, $headers, $url);
+}
 
 function getCSRF(){
 	$url = "https://accounts.spotify.com/en/login";
