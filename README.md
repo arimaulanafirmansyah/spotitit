@@ -1,3 +1,20 @@
+# Usage Tools Windows
+- Install Xampp
+- Add Path PHP (https://dinocajic.medium.com/add-xampp-php-to-environment-variables-in-windows-10-af20a765b0ce)
+- Install Git Clone
+- Git clone https://github.com/arimaulanafirmansyah/spotitit
+- cd spotitit
+- php index.php
+
+# Usage Tools Termux
+- pkg update
+- pkg upgrade
+- pkg install php
+- pkg install git
+- git clone https://github.com/arimaulanafirmansyah/spotitit
+- cd spotitit
+- php index.php
+
 # Tools Spotify Premium 3 Bulan Samsung
 https://github.com/arimaulanafirmansyah/spotitit
 Tidak Perlu Pay Di Aplikasi, Tinggal Run Tools
